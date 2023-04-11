@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<table>
+  <tr> <th>Bai Tap Ham<th></tr>
+
+<tr>
+
+  <td><label>Diem Trung Binh Mon</label></td>
+  <td><button type="button" onclick="diemtrungbinh()"  > Tính Điểm Trung Bình </button></td>
+</tr>
+  <tr>
+<td><label>Chuyen Do</label> </td>
+<td><button type="button" onclick="chuyendo()"  > Chuyen Do </button> </td>
+  </tr>
+  <tr>
+<td><label>Chu Vi</label></td>
+<td><button type="button" onclick="chuvihinhtron()"  >  Chu Vi Hinh Tron </button></td>
+  </tr>
+  <tr>
+    <td><label>Dien Tich</label></td>
+    <td><button type="button" onclick="dientichhinhtron()"  >  Dien Tich Hinh Tron </button></td>
+  </tr>
+</table>
+<script>
+  function diemtrungbinh() {
+    let vatli = parseInt(prompt("diem vat li"));
+    let hoahoc = parseInt(prompt("Diem Hoa Hoc"));
+    let sinhhoc = parseInt(prompt("Diem Sinh Hoa"));
+    let diemtrungbinh = (vatli * hoahoc*sinhhoc)/3;
+alert(diemtrungbinh)  }
+
+  function chuyendo(){
+  let h = parseInt(prompt("độ C Cần Đổi"));
+  let t = 1.8 * h + 32;
+  alert(t)
+  }
+  function chuvihinhtron(){
+    let r = parseInt(prompt("Ban Kinh"));
+    let d = parseInt(prompt("Duong Kinh"));
+    const pi = 3.14;
+    let tron = r*pi*2;
+    let tron2 = d*pi;
+    if (r===0)
+      alert(tron2)
+    else
+      alert(tron)
+  }
+  function dientichhinhtron(){
+    let r1 = parseInt(prompt("Ban Kinh :"));
+    let d1 = parseInt(prompt("Duong Kinh :"));
+    let chuvi = parseInt(prompt("Nhap Chu Vi ( khong co thi nhap 0) :"))
+    const pi = 3.14;
+    let tron3 = r1*pi*r1;
+    let tron4 = (d1/2)*(d1/2)*pi;
+    let tron5 = (chuvi*chuvi)/(4*pi);
+
+    alert("Tinh Theo Chu Vi"+tron5)
+    alert("Tinh Theo Ban Kinh"+tron3)
+    alert("Tinh Theo Duong Kinh"+tron4)
+  }
+
+</script>
+</body>
+</html>
