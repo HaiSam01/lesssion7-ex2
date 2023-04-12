@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body>
+<table>
+  <th>Caculator</th>
+  <tr>
+    <td>
+      <input type="text" id="so1" >
+    </td>
+    <td><input type="text" id="so2" </td>
+  </tr>
+  <tr>
+      <td> <button type="button" onclick="tinhcong()">Addition(+)</button>
+       <button type="button" onclick="tinhtru()">Subtraction(-)</button> </td>
+      <td> <button type="button" onclick="tinhnhan()">Multiplication(x)</button>
+            <button type="button" onclick="tinhchia()">Division(/)</button> </td>
+
+  </tr>
+</table>
+<p id="ketqua"></p>
+<script>
+    function tinhcong (){
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        let c = a +b;
+        document.getElementById("ketqua").innerHTML=c
+    }
+    function tinhtru (){
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        let c = a -b;
+        document.getElementById("ketqua").innerHTML=c
+    function tinhtru (){
+            let a = document.getElementById("so1").value;
+            let b = document.getElementById("so2").value;
+            let c = a -b;
+            document.getElementById("ketqua").innerHTML=c
+        }
+    }function tinhnhan (){
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        let c = a *b;
+        document.getElementById("ketqua").innerHTML=c
+    }function tinhchia (){
+        let a = document.getElementById("so1").value;
+        let b = document.getElementById("so2").value;
+        let c = a /b;
+        document.getElementById("ketqua").innerHTML=c
+    }
+</script>
+</body>
+</html>
