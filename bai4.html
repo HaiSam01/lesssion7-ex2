@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>Form Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="giatri" id="a"></td>
+            <td><select id="b">
+                <option name="USD" value="USD">USD</option>
+                <option name="VND" value="VND">VND</option>
+            </select> </td>
+            <td><select id="c">
+                <option name="USD" value="USD">USD</option>
+                <option name="VND" value="VND">VND</option>
+            </select> </td>
+            <td><button type="button" onclick="chuyendoi123()">Chuyen doi</button></td>
+        </tr>
+    </table>
+    <p id="tt"> </p>
+</form>
+</body>
+<script>
+    function chuyendoi123(){
+     let  d = document.getElementById("b").value;
+     let  f = document.getElementById("c").value;
+     let g =document.getElementById("a").value;
+     let t;
+    if (d==f){
+    t = g;
+    }
+    else if (d == "VND" ){
+        t = g * 23000;
+    }
+        else  {
+            t = g/23000;
+        }
+        document.getElementById("tt").innerHTML= t
+
+    }
+</script>
+</html>
